@@ -22,7 +22,7 @@
     </param>
     <param>
       <key>description</key>
-      <value>Followed this tutorial: https://www.youtube.com/watch?v=2Nd9BIYmKD8</value>
+      <value>Followed this tutorial: https://www.youtube.com/watch?v=7Do_X4LaX4M</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -113,7 +113,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>250000</value>
+      <value>200000</value>
     </param>
   </block>
   <block>
@@ -156,7 +156,7 @@
     </param>
     <param>
       <key>max</key>
-      <value>110e6</value>
+      <value>200e6</value>
     </param>
     <param>
       <key>min</key>
@@ -273,7 +273,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0</value>
+      <value>50</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -321,14 +321,26 @@
     </param>
   </block>
   <block>
-    <key>analog_wfm_rcv</key>
+    <key>analog_am_demod_cf</key>
     <param>
-      <key>audio_decimation</key>
+      <key>audio_decim</key>
       <value>1</value>
+    </param>
+    <param>
+      <key>audio_pass</key>
+      <value>10000</value>
+    </param>
+    <param>
+      <key>audio_stop</key>
+      <value>11000</value>
     </param>
     <param>
       <key>alias</key>
       <value></value>
+    </param>
+    <param>
+      <key>chan_rate</key>
+      <value>down_rate</value>
     </param>
     <param>
       <key>comment</key>
@@ -344,7 +356,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(864, 244)</value>
+      <value>(872, 228)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -352,7 +364,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>analog_wfm_rcv_0</value>
+      <value>analog_am_demod_cf_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -361,10 +373,6 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>quad_rate</key>
-      <value>down_rate</value>
     </param>
   </block>
   <block>
@@ -411,7 +419,7 @@
     </param>
     <param>
       <key>samp_rate</key>
-      <value>24000</value>
+      <value>48000</value>
     </param>
   </block>
   <block>
@@ -463,96 +471,6 @@
     <param>
       <key>vlen</key>
       <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>gr_rds_decoder</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>debug</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(888, 72)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>gr_rds_decoder_0</value>
-    </param>
-    <param>
-      <key>log</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>gr_rds_panel</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>freq</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(984, 24)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>grid_pos</key>
-      <value></value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>gr_rds_panel_0</value>
-    </param>
-    <param>
-      <key>notebook</key>
-      <value></value>
     </param>
   </block>
   <block>
@@ -694,7 +612,7 @@
     </param>
     <param>
       <key>cutoff_freq</key>
-      <value>100e3</value>
+      <value>6e3</value>
     </param>
     <param>
       <key>decim</key>
@@ -718,7 +636,7 @@
     </param>
     <param>
       <key>gain</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>id</key>
@@ -742,11 +660,11 @@
     </param>
     <param>
       <key>width</key>
-      <value>10e3</value>
+      <value>200</value>
     </param>
     <param>
       <key>win</key>
-      <value>firdes.WIN_KAISER</value>
+      <value>firdes.WIN_HAMMING</value>
     </param>
   </block>
   <block>
@@ -765,7 +683,7 @@
     </param>
     <param>
       <key>decim</key>
-      <value>250</value>
+      <value>200</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -789,7 +707,7 @@
     </param>
     <param>
       <key>interp</key>
-      <value>24</value>
+      <value>48</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1015,19 +933,13 @@
     </param>
   </block>
   <connection>
-    <source_block_id>analog_wfm_rcv_0</source_block_id>
-    <sink_block_id>gr_rds_decoder_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>analog_wfm_rcv_0</source_block_id>
+    <source_block_id>analog_am_demod_cf_0</source_block_id>
     <sink_block_id>rational_resampler_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>analog_wfm_rcv_0</source_block_id>
+    <source_block_id>analog_am_demod_cf_0</source_block_id>
     <sink_block_id>wxgui_fftsink2_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -1037,12 +949,6 @@
     <sink_block_id>audio_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>gr_rds_decoder_0</source_block_id>
-    <sink_block_id>gr_rds_panel_0</sink_block_id>
-    <source_key>out</source_key>
-    <sink_key>in</sink_key>
   </connection>
   <connection>
     <source_block_id>limesdr_source_0</source_block_id>
@@ -1058,7 +964,7 @@
   </connection>
   <connection>
     <source_block_id>low_pass_filter_0</source_block_id>
-    <sink_block_id>analog_wfm_rcv_0</sink_block_id>
+    <sink_block_id>analog_am_demod_cf_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
