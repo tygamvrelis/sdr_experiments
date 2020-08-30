@@ -44,7 +44,7 @@ class top_block(grc_wxgui.top_block_gui):
         self.volume = volume = 50
         self.samp_rate = samp_rate = 30e6
         self.rf_gain = rf_gain = 15
-        self.rf_freq = rf_freq = 100e6
+        self.rf_freq = rf_freq = 1717.5e6
         self.down_rate = down_rate = 3e6
 
         ##################################################
@@ -104,7 +104,7 @@ class top_block(grc_wxgui.top_block_gui):
         	ref_scale=2.0,
         	sample_rate=samp_rate,
         	fft_size=1024,
-        	fft_rate=15,
+        	fft_rate=50,
         	average=False,
         	avg_alpha=None,
         	title='Waterfall Plot',
@@ -119,7 +119,7 @@ class top_block(grc_wxgui.top_block_gui):
         	ref_scale=2.0,
         	sample_rate=samp_rate,
         	fft_size=1024,
-        	fft_rate=15,
+        	fft_rate=50,
         	average=False,
         	avg_alpha=None,
         	title='FFT Plot',

@@ -128,7 +128,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>100e6</value>
+      <value>1717.5e6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -511,7 +511,7 @@
     </param>
     <param>
       <key>fft_rate</key>
-      <value>15</value>
+      <value>50</value>
     </param>
     <param>
       <key>samp_rate</key>
@@ -578,7 +578,7 @@
     </param>
     <param>
       <key>fft_rate</key>
-      <value>15</value>
+      <value>50</value>
     </param>
     <param>
       <key>fft_size</key>
