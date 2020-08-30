@@ -42,7 +42,7 @@ class top_block(grc_wxgui.top_block_gui):
         # Variables
         ##################################################
         self.volume = volume = 50
-        self.samp_rate = samp_rate = 10e6
+        self.samp_rate = samp_rate = 30e6
         self.rf_gain = rf_gain = 15
         self.rf_freq = rf_freq = 100e6
         self.down_rate = down_rate = 3e6
@@ -152,7 +152,7 @@ class top_block(grc_wxgui.top_block_gui):
         self.limesdr_source_0 = limesdr.source('', 0, '')
         self.limesdr_source_0.set_sample_rate(samp_rate)
         self.limesdr_source_0.set_center_freq(rf_freq, 0)
-        self.limesdr_source_0.set_bandwidth(10e6,0)
+        self.limesdr_source_0.set_bandwidth(30e6,0)
         self.limesdr_source_0.set_gain(rf_gain,0)
         self.limesdr_source_0.set_antenna(255,0)
 

@@ -258,7 +258,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>10e6</value>
+      <value>30e6</value>
     </param>
   </block>
   <block>
@@ -328,7 +328,7 @@
     </param>
     <param>
       <key>analog_bandw_ch0</key>
-      <value>10e6</value>
+      <value>30e6</value>
     </param>
     <param>
       <key>analog_bandw_ch1</key>
